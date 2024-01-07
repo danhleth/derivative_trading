@@ -1,0 +1,28 @@
+# Hypothesis
+# Short at 10:30:00
+# Close at 11:29:45
+
+
+
+ALGO:
+  name: "market making"
+  version: "1.0.0"
+  description: "Implementation of Avellaneda-Stoikov's approach"
+  params:
+    S0: 1156.5
+    T: 1.0
+    gamma: 0.1
+    k: 1.5
+    A: 140
+    I: 1
+  
+opts:
+  save_dir: "runs/market_making"
+  maturity: True
+    
+
+DATASET:
+  TRAIN:
+    csv_file: "datasetATDB/train.csv"
+  VAL:
+    csv_file: "datasetATDB/val.csv"
